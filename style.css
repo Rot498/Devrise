@@ -228,3 +228,23 @@ form input::placeholder, form textarea::placeholder {
     font-size: 1rem;
   }
 }
+
+/* ===== MENU HAMBÚRGUER ===== */
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
