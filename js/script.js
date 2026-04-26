@@ -13,11 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      if (mensagem.length < 10) {
-        alert("A mensagem deve ter no mínimo 10 caracteres.");
-        return;
-      }
-
       alert("Mensagem enviada com sucesso!");
       form.reset();
     });
