@@ -3,67 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevRise - Início</title>
+  <title>DevRise</title>
+
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <nav>
-      <img src="img/devrise.jpeg" alt="DevRise Logo" class="logo">
+
+<header class="navbar">
+  <div class="logo">
+    <span class="dev">Dev</span><span class="rise">Rise</span>
+  </div>
+
+<nav> <a href="#">Projetos</a> 
+      <a href="#">Serviços</a> 
+      <a href="#" class="btn-nav">Contato</a> 
+</nav> 
+ </header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>
+      Soluções digitais <br>
+      que <span>impulsionam seu negócio</span>
+    </h1>
+
+    <p>
+      Desenvolvimento de sites modernos, sistemas personalizados <br>
+      e automações que elevam seu projeto ao próximo nível.
+    </p>
+
+    <div class="buttons">
+      <a href="#" class="btn-primary">Iniciar projeto →</a>
+      <a href="#" class="btn-outline">Ver projetos</a>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="img/notebook.png" alt="notebook">
+  </div>
+</section>
+
+<section id="servicos" class="servicos reveal">
+
+  <h2>Serviços</h2>
+  <p class="sub">Soluções que ofereço para ajudar seu negócio a crescer.</p>
+
+  <div class="cards">
+
+    <div class="card reveal">
+      <div class="icon">💻</div>
+      <h3>Desenvolvimento Web</h3>
+      <p>Criação de sites modernos, responsivos e otimizados para todos os dispositivos.</p>
+      <a href="#">Saiba mais →</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">🗄️</div>
+      <h3>Sistemas Personalizados</h3>
+      <p>Soluções sob medida para automatizar processos e melhorar resultados.</p>
+      <a href="#">Saiba mais →</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">📊</div>
+      <h3>Dashboards & BI</h3>
+      <p>Transformo dados em insights visuais para decisões mais estratégicas.</p>
+      <a href="#">Saiba mais →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="tech" class="tech reveal">
+
+  <h2>Tecnologias</h2>
+  <p class="sub">Ferramentas e tecnologias que utilizo nos meus projetos.</p>
+
+  <div class="tech-icons">
+
+    <div class="tech-card reveal">
+      <img src="img/html.png" alt="HTML">
+      <span>HTML5</span>
+    </div>
+
+    <div class="tech-card reveal">
+      <img src="img/css.png" alt="CSS">
+      <span>CSS3</span>
+    </div>
+
+    <div class="tech-card reveal">
+      <img src="img/js.png" alt="JavaScript">
+      <span>JavaScript</span>
+    </div>
+
+    <div class="tech-card reveal">
+      <img src="img/java.png" alt="Java">
+      <span>Java</span>
+    </div>
+
+    <div class="tech-card reveal">
+      <img src="img/sql.png" alt="SQL">
+      <span>SQL</span>
+    </div>
+
+    <div class="tech-card reveal">
+      <img src="img/powerbi.png" alt="Power BI">
+      <span>Power BI</span>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contato" class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3 class="logo">
+  <span class="dev">Dev</span><span class="rise">Rise</span>
+</h3>
+      <p>Transformando ideias em soluções digitais modernas.<br>
+  Desenvolvimento de sites e sistemas sob medida para impulsionar resultados.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
       <ul>
-        <li><a href="contato.html">Contato</a></li>
+        <li><i class="fas fa-envelope"></i> devrise777@gmail.com</li>
+        <li><i class="fas fa-phone"></i> (11) 95468-8500</li>
+        <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
       </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Bem-vindo à DevRise 🚀</h1>
-    <p>Soluções digitais modernas para o crescimento do seu negócio.</p>
-    <a href="servicos.html" class="btn">Conheça nossos serviços</a>
-  </section>
-
- <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h4 id="sobre">Nossa Empresa</h4>
-            <p>A DevRise nasceu com o propósito de transformar ideias em soluções digitais inovadoras. Atuamos no desenvolvimento front-end e back-end para criar sites e sistemas sob medida.</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Redes Sociais</h4>
-            <ul class="social-links">
-                <li>
-                    <a href="https://www.instagram.com/devi.rise/" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/robert-oliveira-a7389532a/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Rot498" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <h4 id="contato">Contato</h4>
-            <p>Email: devrise777@gmail.com</p>
-            <p>Telefone: (11) 95468-8500</p>
-        </div>
     </div>
 
-    <div class="footer-bottom">
-        <p>&copy; 2025 DevRise. Todos os direitos reservados.</p>
+    <div class="footer-col">
+      <h4>Redes</h4>
+      <ul>
+        <li>
+  <a href="https://github.com/Rot498" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</li>
+
+        <li>
+  <a href="https://www.linkedin.com/in/robert-oliveira-a7389532a/" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+</li>
+        <li>
+  <a href="https://www.instagram.com/devi.rise/" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+</li>
+      </ul>
     </div>
+
+  </div>
 </footer>
 
+<script>
+/* SCROLL SUAVE */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
 
-  <script src="js/script.js"></script>
+/* ANIMAÇÃO AO SCROLL */
+const elements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
