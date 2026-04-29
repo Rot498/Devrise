@@ -11,8 +11,9 @@ body {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 20px;
   min-height: 70vh;
+  gap: 40px;
 }
 
 .tag {
@@ -37,7 +38,8 @@ body {
 }
 
 .hero-img img {
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
 }
 
 .hero h1 span {
@@ -58,6 +60,12 @@ body {
   text-decoration: none;
   color: white;
   box-shadow: 0 0 20px rgba(124,58,237,0.6);
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(124,58,237,0.8);
 }
 
 .btn-outline {
@@ -106,18 +114,15 @@ body {
   width: 320px;
   padding: 30px;
   border-radius: 20px;
-
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(168, 85, 247, 0.2);
   backdrop-filter: blur(10px);
-
   text-align: left;
   transition: 0.3s;
 }
 
-/* HOVER */
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.03);
   box-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
 }
 
@@ -127,14 +132,11 @@ body {
   height: 50px;
   background: linear-gradient(135deg, #7c3aed, #a855f7);
   border-radius: 12px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-bottom: 20px;
   font-size: 22px;
-
   box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
 }
 
@@ -148,7 +150,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* LINK */
 .card a {
   color: #a855f7;
   text-decoration: none;
@@ -178,47 +179,38 @@ body {
 .tech-card {
   width: 110px;
   height: 110px;
-
   border-radius: 15px;
-
   background: linear-gradient(
     180deg,
     rgba(15,15,40,0.7),
     rgba(5,5,20,0.95)
   );
-
   border: 1px solid rgba(168, 85, 247, 0.08);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   gap: 10px;
-
   transition: 0.3s;
 }
 
-/* HOVER */
 .tech-card:hover {
   transform: translateY(-5px);
   border-color: rgba(168, 85, 247, 0.3);
   box-shadow: 0 0 20px rgba(124,58,237,0.2);
 }
 
-/* ÍCONE */
 .tech-card img {
   width: 100px;
   height: auto;
 }
 
-/* TEXTO */
 .tech-card span {
   font-size: 13px;
   color: #d1d5db;
 }
 
-/* FOOTER */
+/* FOOTER (MANTIDO ORIGINAL) */
 .footer {
   background: #0b0f1a;
   color: #cbd5e1;
@@ -280,10 +272,15 @@ body {
   color: #8b5cf6;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVO FOOTER */
 @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .footer ul li,
+  .footer a {
+    justify-content: center;
   }
 }
 
@@ -293,23 +290,71 @@ body {
   }
 }
 
-/* RESPONSIVO */
+/* ========================= */
+/* 📱 RESPONSIVO GERAL */
+/* ========================= */
+
 @media (max-width: 900px) {
+
   .hero {
     flex-direction: column;
     text-align: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-img img {
+    max-width: 320px;
+  }
+
+  .btn-outline {
+    display: block;
+    margin: 10px auto 0;
+  }
+
+  .servicos {
+    padding: 60px 20px;
   }
 
   .cards {
     flex-direction: column;
-  }
-
-  .footer-grid {
-    flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .tech {
+    padding: 60px 20px;
+  }
+
+  .tech-card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .tech-card img {
+    width: 50px;
+  }
+
 }
 
+/* ANIMAÇÃO */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -331,21 +376,6 @@ body {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* HOVER PREMIUM */
-.card, .tech-icons div {
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-}
-
-/* BOTÕES MAIS SUAVES */
-.btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px rgba(124,58,237,0.8);
 }
 
 /* CAMADAS */
