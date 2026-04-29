@@ -1,0 +1,82 @@
+:root {
+  --nav-height: 100px;
+}
+
+body {
+  padding-top: var(--nav-height);
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed; /* deixa fixo */
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 80px;
+  align-items: center;
+
+  backdrop-filter: blur(10px);
+  background: rgba(5, 5, 16, 0.7); /* fundo semi transparente */
+
+  z-index: 1000; /* garante que fica acima de tudo */
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* DEV (degradê roxo) */
+.dev {
+  background: linear-gradient(90deg, #c084fc, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* RISE (branco) */
+.rise {
+  color: #ffffff;
+}
+
+.logo:hover {
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.9);
+  transition: 0.3s;
+}
+
+.slogan {
+  display: block;
+  font-size: 12px;
+  color: #a855f7;
+  margin-top: 4px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #a855f7;
+}
+
+.btn-nav {
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  padding: 8px 18px;
+  border-radius: 12px;
+  color: white !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}

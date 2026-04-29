@@ -1,51 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Projetos</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevRise - Projetos</title>
+
+  <link rel="stylesheet" href="css/projetos.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<header class="header">
-  <h2 class="logo">DevRise</h2>
+<!-- NAVBAR -->
+<header class="navbar">
+  <h1 class="logo">
+    <span class="dev">Dev</span><span class="rise">Rise</span>
+  </h1>
+
   <nav>
-    <a href="index.html">Home</a>
-    <a href="contato.html">Contato</a>
+    <a href="index.html" class="active">Início</a>
+    <a href="contato.html" class="btn-nav">Contato</a>
   </nav>
 </header>
 
-<section class="page">
+<!-- HERO -->
+<section class="hero">
+  <h2>Projetos</h2>
+  <p>Confira alguns trabalhos e projetos que desenvolvi.</p>
 
-  <h1>Projetos</h1>
+  <div class="filtros">
+    <button class="active" data-filter="todos">Todos</button>
+    <button data-filter="web">Sites</button>
+    <button data-filter="sistema">Sistemas</button>
+    <button data-filter="dashboard">Dashboards</button>
+  </div>
+</section>
 
-  <div class="grid">
+<!-- PROJETOS -->
+<section class="projetos-container">
 
-    <div class="card projeto">
-      <div class="img"></div>
-      <h3>Site Institucional</h3>
-      <p>Projeto moderno para empresas.</p>
-      <span class="tag">Web</span>
+  <div class="card" data-category="web">
+    <img src="img/site.png">
+    <div class="card-content">
+      <h3>Sites</h3>
+      <span class="tag web">Web</span>
+      <p>Site moderno e responsivo para empresas.</p>
+      <button onclick="abrirModal('Site Institucional', 'Projeto completo com HTML, CSS e responsividade.')">
+        Ver detalhes →
+      </button>
     </div>
+  </div>
 
-    <div class="card projeto">
-      <div class="img"></div>
-      <h3>Dashboard Power BI</h3>
-      <p>Análise de dados interativa.</p>
-      <span class="tag">BI</span>
+  <div class="card" data-category="dashboard">
+    <img src="img/dashboard.png">
+    <div class="card-content">
+      <h3>Dashboard de Vendas</h3>
+      <span class="tag dash">Dashboard</span>
+      <p>Visualização de dados com Power BI.</p>
+      <button onclick="abrirModal('Dashboard', 'Análise de vendas com gráficos interativos.')">
+        Ver detalhes →
+      </button>
     </div>
+  </div>
 
-    <div class="card projeto">
-      <div class="img"></div>
-      <h3>Jogo RPG</h3>
-      <p>Sistema de batalha em Java.</p>
-      <span class="tag">Java</span>
+  <div class="card" data-category="sistema">
+    <img src="img/sistema.png">
+    <div class="card-content">
+      <h3>Sistema de Tarefas</h3>
+      <span class="tag sistema">Sistema</span>
+      <p>Gerenciamento de tarefas completo.</p>
+      <button onclick="abrirModal('Sistema', 'CRUD completo com foco em produtividade.')">
+        Ver detalhes →
+      </button>
     </div>
-
   </div>
 
 </section>
+
+<!-- CTA -->
+<section class="cta">
+  <div>
+    <h3>Tem um projeto em mente?</h3><br>
+    <p>Vamos conversar e transformar sua ideia em realidade.</p>
+  </div>
+  <a href="contato.html">Fale conosco →</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="copy">© 2024 DevRise. Todos os direitos reservados.</p>
+</footer>
+
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <button class="close" onclick="fecharModal()">×</button>
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+  </div>
+</div> 
+
+<script src="js/projetos.js"></script>
 
 </body>
 </html>

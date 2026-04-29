@@ -1,0 +1,255 @@
+body {
+  background: radial-gradient(circle at top, #0b0b25, #02020a);
+  color: #fff;
+  padding-top: 45px;
+}
+
+.contato {
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #0b0b2a, #050510);
+  color: #fff;
+}
+
+.contato h1,
+.subtitulo {
+  text-align: center;
+}
+
+.subtitulo {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+/* GRID */
+.contato-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* CARDS ESQUERDA */
+.info-contato .item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+ background: rgba(30, 30, 70, 0.35);
+  border: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  transition: 0.3s;
+}
+
+.info-contato .item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+.info-contato i {
+  font-size: 18px;
+  color: #a855f7;
+  background: rgba(168, 85, 247, 0.15);
+  padding: 12px;
+  border-radius: 12px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.info-contato h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.info-contato p {
+  margin: 0;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.contato-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* FORM */
+.formulario {
+  background: rgba(25, 25, 60, 0.45);
+  backdrop-filter: blur(20px);
+  padding: 35px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.formulario input,
+.formulario textarea {
+  background: #080818;
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: #6b7280;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border: 1px solid #9333ea;
+  box-shadow: 0 0 15px rgba(147, 51, 234, 0.6);
+}
+
+/* BOTÃO */
+.formulario button {
+  background: linear-gradient(90deg, #9333ea, #7c3aed);
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.formulario button span {
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+.formulario button:hover span {
+  margin-left: 12px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.redes {
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #0b0b2a, #050510);
+  text-align: center;
+}
+
+.redes h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.redes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.rede-card {
+  background: rgba(25, 25, 60, 0.4);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 18px;
+  text-align: left;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.rede-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
+}
+
+/* ÍCONES */
+.rede-card i {
+  font-size: 28px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+/* CORES ORIGINAIS */
+.fa-github {
+  color: #fff;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+.fa-instagram {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TEXTO */
+.rede-card h3 {
+  margin-bottom: 10px;
+}
+
+.rede-card p {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 15px;
+}
+
+.rede-card a {
+  color: #a855f7;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.rede-card a:hover {
+  color: #c084fc;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #fff;
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 999;
+  transition: 0.3s;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .redes-grid {
+    grid-template-columns: 1fr;
+  }
+} 
+
+@media (max-width: 900px) {
+  .contato-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
